@@ -11,10 +11,10 @@ const MyPost = () => {
        <button>Remove Post</button>
       </div>
       <div className={s.posts}>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <Post message="Hi how you" />
+      <Post message="My Name" />
+      <Post message="Whery you" />
+      <Post message="props you left" />
       </div>
     </div>)
 
