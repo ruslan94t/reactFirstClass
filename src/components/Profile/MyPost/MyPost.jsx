@@ -3,9 +3,10 @@ import s from './MyPost.module.css'
 import Post from './Post/Post';
 const MyPost = () => {
     return (
-    <div>
-      My posts
+    <div className={s.wrapper}>
+   
       <div className={s.area}>
+        <h3>My Post</h3>
        <textarea></textarea>
        <div className={s.container}>
 
