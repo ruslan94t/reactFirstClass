@@ -2,6 +2,19 @@ import React from 'react';
 import s from './MyPost.module.css'
 import Post from './Post/Post';
 const MyPost = () => {
+
+  let postData = [
+    {id:1, message:'You You Yuu', likeCount:"1"},
+    {id:2, message:'Hello html', likeCount:"3"},
+    {id:3, message:'Hello flex', likeCount:"34"},
+    {id:4, message:'Hi Juliya', likeCount:"11"}
+      ];
+    
+
+
+
+
+
     return (
     <div className={s.wrapper}>
    

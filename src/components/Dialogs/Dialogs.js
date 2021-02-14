@@ -2,10 +2,24 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Dialogs.module.css'
 
+let dialogsData = [
+  {id:1, name:'Olya'},
+  {id:2, name:'Mahsa'},
+  {id:3, name:'Shasa'},
+  {id:4, name:'Juliya'},
+   ];
+let messagesData = [
+{id:1, message:'You You Yuu'},
+{id:2, message:'Hello html'},
+{id:3, message:'Hello flex'},
+{id:4, message:'Hi Juliya'},
+  ];
+
 
 
 
 const DialogItem = (props)=>{
+
   return(
 
     <div className={s.dialog}>
