@@ -2,3 +2,34 @@
     grid-area: c;
     background-color: cornflowerblue;
   }
+
+  
+
+  .area{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .container{
+    display: flex;
+  }
+  .area textarea{
+    justify-items: flex-start;
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+    width: 40%;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    display: block;
+    border-radius: 25px;
+    border:none;
+    outline: none;
+    background:  transparent;
+    background: rgba(255,255, 255, .3);
+    border:1px solid #cfcfcf;
+
+
+  }

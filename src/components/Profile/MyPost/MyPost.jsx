@@ -5,16 +5,20 @@ const MyPost = () => {
     return (
     <div>
       My posts
-      <div>
+      <div className={s.area}>
        <textarea></textarea>
+       <div className={s.container}>
+
        <button>Add Post</button>
        <button>Remove Post</button>
+       </div>
+      
       </div>
       <div className={s.posts}>
-      <Post message="Hi how you" />
-      <Post message="My Name" />
-      <Post message="Whery you" />
-      <Post message="props you left" />
+      <Post message="Hi how you" likeCount="1" />
+      <Post message="My Name" likeCount="45" />
+      <Post message="Whery you" likeCount="2" />
+      <Post message="props you left" likeCount="23" />
       </div>
     </div>)
 
