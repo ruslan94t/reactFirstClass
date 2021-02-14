@@ -13,5 +13,8 @@
 }
 
 
-
-
+/*for change profile and message*/
+.content {
+  grid-area: c;
+  background-color: cornflowerblue;
+}
