@@ -9,16 +9,24 @@ let postElements = props.posts.map(p=><Post message={p.message} likeCount={p.lik
 
 
 
+let newPostElement = React.createRef();
+//addPost 
+let addPost = ()=>{
+  debugger;
+  let text = newPostElement.current.value;
+  alert(text)
+}
+
 
     return (
     <div className={s.wrapper}>
    
       <div className={s.area}>
         <h3>My Post</h3>
-       <textarea></textarea>
+       <textarea ref={newPostElement} />
        <div className={s.container}>
 
-       <button>Add Post</button>
+       <button onClick={addPost}>Add Post</button>
        <button>Remove Post</button>
        </div>
       

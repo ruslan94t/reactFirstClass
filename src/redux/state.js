@@ -24,7 +24,7 @@ let state = {
             {id:3, message:'Hello flex'},
             ]
     },
-
+    sidebar:{}
 
 }
 
