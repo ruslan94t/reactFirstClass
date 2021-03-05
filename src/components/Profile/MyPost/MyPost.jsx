@@ -12,9 +12,9 @@ let postElements = props.posts.map(p=><Post message={p.message} likeCount={p.lik
 let newPostElement = React.createRef();
 //addPost 
 let addPost = ()=>{
-  debugger;
+ 
   let text = newPostElement.current.value;
-  alert(text)
+  props.addPost(text)
 }
 
 
