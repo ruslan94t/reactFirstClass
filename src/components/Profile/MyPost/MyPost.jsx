@@ -10,30 +10,40 @@ let postElements = props.posts.map(p=><Post message={p.message} likeCount={p.lik
 
 
 let newPostElement = React.createRef();
-//addPost 
+//addPost
 let addPost = ()=>{
- 
+
   let text = newPostElement.current.value;
   props.addPost(text)
-  newPostElement.current.value='';
+    props.updateNewPostText('')
 }
 
+let onPostChange = ()=>{
+    let text = newPostElement.current.value;
+    props.updateNewPostText(text)
+}
 
     return (
     <div className={s.wrapper}>
-   
+
       <div className={s.area}>
         <h3>My Post</h3>
-       <textarea ref={newPostElement} />
+       <textarea
+           onChange={onPostChange}
+           ref={newPostElement}
+           value={props.newPostText}
+
+
+       />
        <div className={s.container}>
 
        <button onClick={addPost}>Add Post</button>
        <button>Remove Post</button>
        </div>
-      
+
       </div>
       <div className={s.posts}>
-     {postElements}
+         {postElements}
       </div>
     </div>)
 

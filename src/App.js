@@ -9,29 +9,30 @@ import Profile from './components/Profile/Profile';
 
 const App = (props) => {
   return (
-   
+
     <div className='app-wrapper'>
       <Header />
       <Navbar />
 
       <div className="content">
-    
+
 
       <Route path="/dialogs" render={()=><Dialogs
       state={props.state.dialogsPage}
-     
-      />  
-    
+
+      />
+
     } />
       <Route path="/profile" component={()=> <Profile
-      state={props.state.profilePage}
+        profilePages={props.state.profilePage}
       addPost ={props.addPost}
+  updateNewPostText={props.updateNewPostText}
       />
-    
+
         } />
       </div>
     </div>
-    
+
  );
 }
 
