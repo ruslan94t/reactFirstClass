@@ -5,6 +5,7 @@ import Dialogs from './components/Dialogs/Dialogs';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 
 const App = (props) => {
@@ -17,7 +18,7 @@ const App = (props) => {
       <div className="content">
 
 
-      <Route path="/dialogs" render={()=><Dialogs
+      <Route path="/dialogs" render={()=><DialogsContainer
 
       store={props.store}
 
@@ -25,8 +26,7 @@ const App = (props) => {
 
     } />
       <Route path="/profile" component={()=> <Profile
-        profilePages={props.state.profilePage}
-        dispatch ={props.dispatch}
+      store={props.store}
 
       />
 

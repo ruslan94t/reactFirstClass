@@ -3,19 +3,18 @@ import MyPost from './MyPost/MyPost';
 
 import s from './Profile.module.css';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
+import MyPostContainer from "./MyPost/MyPostContainer";
 
 
 
 
 const Profile = (props) => {
+
     return(
     <div>
   <ProfileInfo />
-   <MyPost
-   posts={props.profilePages.posts}
-   dispatch={props.dispatch}
-   newPostText={props.profilePages.newPostText}
-   updateNewPostText={props.updateNewPostText}
+   <MyPostContainer
+   store={props.store}
    />
   </div>
 
