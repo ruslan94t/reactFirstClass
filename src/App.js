@@ -18,17 +18,10 @@ const App = (props) => {
       <div className="content">
 
 
-      <Route path="/dialogs" render={()=><DialogsContainer
-
-
-
-      />
+      <Route path="/dialogs" render={()=><DialogsContainer />
 
     } />
-      <Route path="/profile" component={()=> <Profile
-
-
-      />
+      <Route path="/profile" component={()=> <Profile />
 
         } />
       </div>

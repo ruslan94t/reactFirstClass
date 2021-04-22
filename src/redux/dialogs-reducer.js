@@ -32,6 +32,8 @@ switch (action.type) {
         let body = state.newMessageBody;
         state.newMessageBody=''
         state.messages.push({id:4, message:body});
+
+
         return state;
     default :
         return state;

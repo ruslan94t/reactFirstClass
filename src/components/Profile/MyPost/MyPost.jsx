@@ -16,6 +16,8 @@ let onAddPost = (e)=>{
 
 }
 
+
+
 let onPostChange = (e)=>{
     e.preventDefault()
     let text = newPostElement.current.value;
